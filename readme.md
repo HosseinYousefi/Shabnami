@@ -1,3 +1,3 @@
 # Shabnami
 
-A dictionary plugin for Cerbero.
+A dictionary plugin for Cerebero.
