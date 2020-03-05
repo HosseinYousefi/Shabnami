@@ -1,0 +1,32 @@
+.wrapper {
+  align-self: flex-start;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  position: relative;
+  transition: all .3s linear;
+}
+
+.list {
+  margin: 10px;
+  padding: 10px;
+}
+
+.title {
+  display: block;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.fl {
+  display: block;
+  font-size: medium;
+  font-style: italic;
+  color: darkgray;
+}
+
+@keyframes scroll {
+  0% { top: 50%; }
+  100% { top: -25%; }
+}
