@@ -8,7 +8,7 @@ export const order = 10
 export const icon = iconPath
 
 export const fn = ({ term, actions, display }) => {
-  if (term[term.length - 1] == '!') {
+  if (term[term.length - 1] == '.') {
     console.log('yep')
     let q = term.slice(0, -1)
     var search = (q) => {
@@ -23,6 +23,18 @@ export const fn = ({ term, actions, display }) => {
       title: `Definitions for ${q}`,
       onSelect: () => search(q),
       getPreview: () => <Preview query={q}/>
+    })
+  } else if (term.toLowerCase() == "hossein") { // Easter egg ;)
+    display({
+      order: order,
+      icon,
+      title: `❤️`,
+    })
+  } else {
+    display({
+      order: 20,
+      icon,
+      title: `Add a period (.) to search!`,
     })
   }
 }
