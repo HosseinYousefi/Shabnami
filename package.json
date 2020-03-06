@@ -20,5 +20,16 @@
     "test": "cerebro-scripts test",
     "clear": "cerebro-scripts clear",
     "prepublish": "yarn clear && yarn build"
-  }
+  },
+  "description": "A dictionary plugin for Cerebro.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HosseinYousefi/Shabnami.git"
+  },
+  "author": "Hossein Yousefi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HosseinYousefi/Shabnami/issues"
+  },
+  "homepage": "https://github.com/HosseinYousefi/Shabnami#readme"
 }
