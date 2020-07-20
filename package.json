@@ -15,11 +15,18 @@
     "dictionary"
   ],
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "cerebro-scripts start",
     "build": "cerebro-scripts build",
     "test": "cerebro-scripts test",
     "clear": "cerebro-scripts clear",
     "prepublish": "yarn clear && yarn build"
+  },
+  "resolutions": {
+    "acorn": "^5.7.4",
+    "js-yaml": "^3.13.1",
+    "mime": "^1.4.1",
+    "minimist": "^0.2.1"
   },
   "description": "A dictionary plugin for Cerebro.",
   "repository": {
